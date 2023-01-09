@@ -1,0 +1,18 @@
+
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.active {
+  color: red;
+}
+
+
+.header{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}

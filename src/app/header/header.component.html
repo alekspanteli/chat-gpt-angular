@@ -1,0 +1,18 @@
+<header class="header">
+  <app-container>
+    <div class="header__inner">
+      <a href="">Logo</a>
+      <nav>
+        <a
+          *ngFor="let link of links"
+          routerLink="{{ link.path }}"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >{{ link.label }}
+        </a>
+      </nav>
+    </div>
+  </app-container>
+</header>
+
+<!-- <app-container [customClass]="'container--spaced'"> -->
